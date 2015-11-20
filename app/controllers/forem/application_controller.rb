@@ -1,7 +1,7 @@
 require 'cancan'
 
 class Forem::ApplicationController < ApplicationController
-  layout Forem.layout
+  #layout Forem.layout
   
   rescue_from CanCan::AccessDenied do
     redirect_to root_path, :alert => t("forem.access_denied")
