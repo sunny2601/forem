@@ -1,7 +1,7 @@
 module Forem
   module Admin
     class BaseController < ApplicationController
-      layout Forem.layout
+     # layout Forem.layout
       
       before_filter :authenticate_forem_admin
 
