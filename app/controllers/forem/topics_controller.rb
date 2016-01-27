@@ -43,6 +43,7 @@ module Forem
     end
 
     def subscribe
+      binding.pry
       if find_topic
         @topic.subscribe_user(forem_user.id)
         subscribe_successful
